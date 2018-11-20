@@ -6,12 +6,8 @@ body {
 
   min-width: 320px;
 
-  color: $color-base;
+  color: $color-black;
   background-color: $background-color-main;
-
-  @include screen ("tablet", max) {
-    font-size: $font-size-small;
-  }
 }
 
 h1 ,
@@ -78,4 +74,25 @@ img {
 
 .visually-hidden {
   @include visual-hide;
+}
+
+
+
+
+
+
+.bg-gray {
+  background-color: $color-bg;
+}
+.bg-pink {
+  background-color: $color-pink;
+}
+.font-big {
+  font-size: $font-size-big;
+}
+.font-middle{
+  @extend %heading-2;
+}
+table .border-2 {
+  border-width: 2px!important;
 }

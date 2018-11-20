@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 300;
+  font-style: normal;
+
+  src: url("../static/fonts/OpenSansLight.eot") format("embedded-opentype"), url("../static/fonts/OpenSansLight.woff2") format("woff2"), url("../static/fonts/OpenSansLight.woff") format("woff"), url("../static/fonts/OpenSansLight.ttf") format("truetype"), url("../static/fonts/OpenSansLight.svg#OpenSansLight") format("svg");
+  src: url("../static/fonts/OpenSansLight.eot");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../static/fonts/OpenSansRegular.eot") format("embedded-opentype"), url("../static/fonts/OpenSansRegular.woff2") format("woff2"), url("../static/fonts/OpenSansRegular.woff") format("woff"), url("../static/fonts/OpenSansRegular.ttf") format("truetype"), url("../static/fonts/OpenSansRegular.svg#OpenSansRegular") format("svg");
+  src: url("../static/fonts/OpenSansRegular.eot");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: normal;
+
+  src: url("../static/fonts/OpenSansBold.eot") format("embedded-opentype"), url("../static/fonts/OpenSansBold.woff2") format("woff2"), url("../static/fonts/OpenSansBold.woff") format("woff"), url("../static/fonts/OpenSansBold.ttf") format("truetype"), url("../static/fonts/OpenSansBold.svg#OpenSansBold") format("svg");
+  src: url("../static/fonts/OpenSansBold.eot");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 800;
+  font-style: normal;
+
+  src: url("../static/fonts/OpenSansSemiBold.eot") format("embedded-opentype"), url("../static/fonts/OpenSansSemiBold.woff2") format("woff2"), url("../static/fonts/OpenSansSemiBold.woff") format("woff"), url("../static/fonts/OpenSansSemiBold.ttf") format("truetype"), url("../static/fonts/OpenSansSemiBold.svg#OpenSansSemiBold") format("svg");
+  src: url("../static/fonts/OpenSansSemiBold.eot");
+}

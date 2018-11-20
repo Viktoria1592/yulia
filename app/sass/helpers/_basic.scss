@@ -1,0 +1,81 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+
+  min-width: 320px;
+
+  color: $color-base;
+  background-color: $background-color-main;
+
+  @include screen ("tablet", max) {
+    font-size: $font-size-small;
+  }
+}
+
+h1 ,
+h2 ,
+h3 ,
+h4 ,
+h5 ,
+h6 ,
+p ,
+ul ,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+
+  vertical-align: top;
+}
+
+%heading-1 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+%heading-2 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.125;
+}
+
+%heading-3 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+%text-small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+%text-big {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+%links {
+  font-size: $font-size-base;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  color: $background-color-main;
+}
+
+.visually-hidden {
+  @include visual-hide;
+}

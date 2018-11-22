@@ -1,0 +1,166 @@
+.gallery-title {
+  font-size: 36px;
+  font-weight: 500;
+
+  margin-bottom: 70px;
+
+  text-align: center;
+
+  color: #42b32f;
+}
+.gallery-title:after {
+  position: absolute;
+  left: 46.5%;
+
+  width: 7.5%;
+  height: 45px;
+
+  content: "";
+
+  border-bottom: 1px solid #5e5e5e;
+}
+.filter-button {
+  font-size: 18px;
+
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  color: #42b32f;
+  border: 1px solid #42b32f;
+  border-radius: 5px;
+}
+.filter-button:hover {
+  font-size: 18px;
+
+  text-align: center;
+
+  color: #ffffff;
+  border: 1px solid #42b32f;
+  border-radius: 5px;
+  background-color: #42b32f;
+}
+.btn-default:active .filter-button:active {
+  color: white;
+  background-color: #42b32f;
+}
+.port-image {
+  width: 100%;
+}
+.gallery_product {
+  margin-bottom: 30px;
+}
+#demo {
+  position: relative;
+
+  overflow: hidden;
+
+  height: 100%;
+}
+.green {
+  background-color: #6fb936;
+}
+.thumb {
+  margin-bottom: 30px;
+}
+.page-top {
+  margin-top: 85px;
+}
+img.zoom {
+  width: 100%;
+  height: 200px;
+
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+
+  border-radius: 5px;
+
+  object-fit: cover;
+}
+.transition {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-title {
+  color: #000000;
+}
+.modal-footer {
+  display: none;
+}
+.Portfolio {
+  position: relative;
+
+  float: left;
+
+  width: 180px;
+  margin: 5px;
+
+  transition-duration: .4s;
+  animation: winanim .5s ;
+
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12);
+
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}
+.Portfolio:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.Portfolio img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 5px;
+}
+.desc {
+  font-size: 90%;
+
+  padding: 5px;
+
+  text-align: center;
+
+  color: hotpink;
+  background: black;
+}
+.nav {
+  margin-top: -30px;
+  margin-left: 340px;
+  padding: 20px;
+}
+.nav li a {
+  font-size: 16px;
+
+  margin: 5px;
+  padding: 15px 50px;
+
+  transition-duration: .4s;
+
+  color: hotpink;
+  background: #000000;
+}
+.nav a:hover {
+  background: #333333;
+}
+.nav .active {
+  color: #ffffff;
+  background-color: hotpink !important;
+}
+@keyframes winanim {
+  0% {
+    transform: scale3d(.3,.3,.3);
+
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

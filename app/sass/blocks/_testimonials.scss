@@ -1,0 +1,10 @@
+.testimonials {
+  background: url("../img/testimonialbg.jpg") no-repeat 0 0;
+  background-size: cover;
+  &-item {
+    padding: 30px 20px;
+  }
+  &-container {
+    display: flex;
+  }
+}

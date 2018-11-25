@@ -44,6 +44,7 @@ $(this).removeClass("active");
 }
 $(this).addClass("active");
 });
+
 $(document).ready(function(){
   $(".fancybox").fancybox({
         openEffect: "none",
@@ -55,11 +56,15 @@ $(document).ready(function(){
 		$(this).removeClass('transition');
 	});
 });
+
 		window.onload = function() {
     new Swiper(".swiper-container",{
-        slidesPerView: 3,
+        slidesPerView: 2,
 		spaceBetween: 30,
         speed: 400,
+        autoplay: {
+        delay: 5000,
+        },
         pagination: {
             el: ".swiper-pagination",
 			clickable: true,

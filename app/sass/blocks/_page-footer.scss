@@ -1,0 +1,10 @@
+.page-footer {
+  & .fa {
+    font-size: 20px;
+  }
+}
+.copyright-text {
+  & a {
+color: $color-pink;
+  }
+}

@@ -6529,16 +6529,23 @@ button.close {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
+/*  right: 15%;*/
+/*  bottom: 20px;*/
+  top: 25%;
   left: 15%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  text-align: center
+  text-align: left;
+  width: 35%;
 }
-
+.carousel-caption h3 {
+  font-size:58px;
+}
+.carousel-caption h5 {
+  font-size:28px;
+}
 .align-baseline {
   vertical-align: baseline !important
 }

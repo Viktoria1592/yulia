@@ -1,5 +1,5 @@
 .btn-round {
-  border-radius: 29px;
+  border-radius: 29px!important;
 
   &:hover {
     cursor: pointer;
@@ -7,4 +7,34 @@
 }
 .bg-none {
   background-color: transparent;
+}
+.btn {
+  a {
+    position: relative;
+    &:hover {
+      text-decoration: none;
+      &::after {
+        transform: scaleY(1);
+      }
+    }
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      content: "";
+      transition-timing-function: ease-out;
+      transition-duration: .3s;
+      transition-property: transform;
+      transform: scaleY(0);
+      transform-origin: 50%;
+
+      border-radius: 29px;
+      background-color: #1a1a1a;
+      background-color: $color-black;
+    }
+  }
 }

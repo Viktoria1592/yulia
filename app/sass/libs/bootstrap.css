@@ -671,6 +671,7 @@ pre code {
 .col-md-10,
 .col-md-11,
 .col-md-12,
+.col-md-12,
 .col-md-2,
 .col-md-3,
 .col-md-4,
@@ -1220,6 +1221,11 @@ pre code {
     flex: 0 0 100%;
     max-width: 100%
   }
+  .col-md-13 {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%
+}
 
   .order-md-first {
     -ms-flex-order: -1;
@@ -6495,7 +6501,7 @@ button.close {
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   width: 30px;
-  height: 3px;
+  height: 7px;
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;

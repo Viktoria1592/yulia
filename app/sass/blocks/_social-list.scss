@@ -9,17 +9,13 @@
     height: 50px;
     margin-right: 12px;
 
-    border-radius: 100%;
-    &--border-white {
-      transition: .3s linear;
+    transition: .3s linear;
 
-      border: 2px solid #ffffff;
-      &:hover {
-        border-color: #ffffff;
-      }
-      &:active {
-        border-color: #e9ebec;
-      }
+    border-radius: 100%;
+    background-color: rgba(82, 78, 78, .65);
+
+    &:hover {
+      background-color: $color-pink;
     }
     &::before {
       top: 32%;
@@ -50,10 +46,11 @@
   }
   &__item--ok {
     &::before {
-      width: 25px;
-      height: 25px;
       top: 25%;
       left: 28%;
+
+      width: 25px;
+      height: 25px;
 
       background-image: url("../img/ok.svg");
     }

@@ -5,6 +5,21 @@
 }
 .copyright-text {
   & a {
-color: $color-pink;
+    color: $color-pink;
+
+    &:hover {
+      text-decoration: none;
+
+      color: $color-pink-bright!important;
+    }
+  }
+}
+.page-contacts {
+  & a {
+    &:hover {
+      text-decoration: none;
+
+      color: $color-pink!important;
+    }
   }
 }

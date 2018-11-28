@@ -1,31 +1,65 @@
 
-var mapFrame = document.getElementById('map');
-if (mapFrame) {
-    ymaps.ready(initMap)
+	$("#headerMenu").on("click","a", function (event) {
+	    event.preventDefault();
+	    var id  = $(this).attr('href'),
+	        top = $(id).offset().top;
+	    $('body,html').animate({scrollTop: top}, 1500);
+	});
+  $("#services").on("click","a", function (event) {
+	    event.preventDefault();
+	    var id  = $(this).attr('href'),
+	        top = $(id).offset().top;
+	    $('body,html').animate({scrollTop: top}, 1500);
+	});
+    $("#contacts").on("click","a", function (event) {
+	    event.preventDefault();
+	    var id  = $(this).attr('href'),
+	        top = $(id).offset().top;
+	    $('body,html').animate({scrollTop: top}, 1500);
+	});
+
+
+      window.onload = function() {
+    new Swiper(".swiper-container",{
+        slidesPerView: 2,
+		spaceBetween: 30,
+        speed: 400,
+        autoplay: {
+        delay: 5000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+			clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+			767: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+			559: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+		}
+    })
 };
 
-function initMap() {
-    var myMap;
-    myMap = new ymaps.Map("map", {
-        center: [59.938816, 30.323244]
-        , zoom: 16
-        , controls: []
-    });
-    myMap.behaviors.disable('scrollZoom');
-    myMap.controls.add("zoomControl", {
-        position: {
-            top: 15
-            , left: 15
-        }
-    });
-    var myPlacemark = new ymaps.Placemark([59.938816, 30.323244], {}, {
-        iconLayout: 'default#image'
-        , iconImageHref: ('../img/ser-4.png')
-        , iconImageSize: [218, 142]
-        , iconImageOffset: [-20, -47]
-    });
-    myMap.geoObjects.add(myPlacemark);
-};
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function(){
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
@@ -56,34 +90,4 @@ $(document).ready(function(){
 		$(this).removeClass('transition');
 	});
 });
-
-		window.onload = function() {
-    new Swiper(".swiper-container",{
-        slidesPerView: 2,
-		spaceBetween: 30,
-        speed: 400,
-        autoplay: {
-        delay: 5000,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-			clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        breakpoints: {
-			767: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-			559: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-		}
-    })
-}
-;
 

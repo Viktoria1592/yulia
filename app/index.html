@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <title>Визажист Юлия Москалева</title>
@@ -8,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/libs/swiper.min.css">
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,16 +15,24 @@
     <script src="js/main.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/swiper.min.js"></script>
-  </head>
-
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
+<link rel="manifest" href="static/favicons/manifest.json">
+<link rel="mask-icon" href="static/favicons/safari-pinned-tab.svg" color="#f57de3">
+<link rel="shortcut icon" href="static/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#f57de3">
+<meta name="msapplication-TileImage" content="static/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="static/favicons/browserconfig.xml">
+<meta name="theme-color" content="#f57de3"></head>
   <body>
     <header class="container-fluid pade-header">
       <div class="row text-white p-3 pl-4 bg-deep-gray">
         <div>
-          <div class="phone-number font-weight-bold pl-1 pb-2"><i class="fa fa-phone pr-2 "></i>+375 (29) 650-14-35</div>
+          <div class="phone-number font-weight-bold pl-1 pb-2"><i class="fa fa-phone pr-2 "></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></div>
           <div class="font-weight-bold" style="font-size:18px; line-height:1">Студия красоты <br>Юлии Москалевой</div>
         </div>
-        <div class="email font-weight-bold pl-5"><i class="fa fa-envelope pr-2"></i>yulashik@gmail.com</div>
+        <div class="email font-weight-bold pl-5"><i class="fa fa-envelope pr-2"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></div>
       </div>
       <div class="row  p-4 bg-black">
         <div class="logo">
@@ -37,7 +44,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-around">
+            <ul class="navbar-nav justify-content-around" id="headerMenu">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
               </li>
@@ -45,7 +52,7 @@
                 <a class="nav-link" href="about.html">О нас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Услуги</a>
+                <a class="nav-link" href="#services">Услуги</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="teach.html">Обучение</a>
@@ -54,20 +61,19 @@
                 <a class="nav-link" href="gallery.html">Галерея</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-
     <div class="container-fluid p-0 slider">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" data-interval="3000" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1" data-interval="3000"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2" data-interval="3000"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" data-interval="1000" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" data-interval="1000"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" data-interval="1000"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -76,7 +82,7 @@
               <h5>Beautyful Hair</h5>
               <h3 class="pb-2">Healthy You</h3>
               <p>Morbi ornare massa odio, ut iaculis nibh faucibus ut. Integer a pretium ante. Donec diam erat, dignissim eu viverra in, mattis in turpis.</p>
-              <button class="btn mt-3 text-white btn-round border border-white bg-none"><a>ПОДРОБНЕЕ</a></button>
+              <button class="btn mt-3 text-white border border-white bg-none"><a>ПОДРОБНЕЕ</a></button>
             </div>
           </div>
           <div class="carousel-item">
@@ -85,7 +91,7 @@
               <h5>Beautyful Hair</h5>
               <h3 class="pb-2">Healthy You</h3>
               <p>Morbi ornare massa odio, ut iaculis nibh faucibus ut. Integer a pretium ante. Donec diam erat, dignissim eu viverra in, mattis in turpis.</p>
-              <button class="btn mt-3 text-white btn-round border border-white bg-none"><a>ПОДРОБНЕЕ</a></button>
+              <button class="btn mt-3 text-white  border border-white bg-none"><a>ПОДРОБНЕЕ</a></button>
             </div>
           </div>
           <div class="carousel-item">
@@ -94,44 +100,45 @@
               <h5>Beautyful Hair</h5>
               <h3 class="pb-2">Healthy You</h3>
               <p>Morbi ornare massa odio, ut iaculis nibh faucibus ut. Integer a pretium ante. Donec diam erat, dignissim eu viverra in, mattis in turpis.</p>
-              <button class="btn mt-3 text-white btn-round border border-white bg-none"><a>ПОДРОБНЕЕ</a></button>
+              <button class="btn mt-3 text-white  border border-white bg-none"><a>ПОДРОБНЕЕ</a></button>
             </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="p-4" style="background-color: #e152aa;"><span class="carousel-control-prev-icon" aria-hidden="true"></span></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="p-4" style="background-color: #e152aa;"><span class="carousel-control-next-icon" aria-hidden="true"></span></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
     </div>
-
     <div class="container-fluid about pt-5 pb-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3 mr-2">
+        <div class="row justify-content-md-between">
+          <div class="col-md-4">
             <h2 class="mb-5">Добро пожаловать к <span style="color:#eb86c4; font-size: 48px;">Юлии</span></h2>
-
             <p class="text-left">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
-            <button class="btn mt-5 text-white btn-round bg-pink"><a>ПОДРОБНЕЕ</a></button>
+            <button class="btn mt-5 text-white btn-round bg-pink"><a href="about.html" class="text-white">ПОДРОБНЕЕ</a></button>
           </div>
-          <div class="col-md-4 mr-2">
-            <img src="img/wel-img.jpg" alt=""></div>
+          <div class="col-md-4 block-mask p-0">
+          <div class="overlay"></div>
+<!--            <img src="img/wel-img.jpg" alt="">-->
+            <div class="mask-1"></div>
+            </div>
           <div class="col-md-4 text-center text-white">
             <table class="bg-pink w-100"><tr class="border border-white border-2 font-weight-bold">
-              <td class="p-3">Часы работы</td>
+              <td class="p-4" style="font-size:34px;">Часы работы</td>
               </tr>
               <tr class="border border-white border-2">
-                <td class="p-3">Пн - Пт <br> <b>10.00 - 17.00</b></td>
+                <td class="p-4">Пн - Пт <br> <b>10.00 - 17.00</b></td>
               </tr>
               <tr class="border border-white border-2">
-                <td class="p-3">суббота<br> <b>10.00 - 15.00</b></td>
+                <td class="p-4">суббота<br> <b>10.00 - 15.00</b></td>
               </tr>
               <tr class="border border-white border-2">
-                <td class="p-3">Воскресенье<br> <b>Закрыто</b></td>
+                <td class="p-4">Воскресенье<br> <b>Закрыто</b></td>
               </tr></table>
           </div>
         </div>
@@ -140,130 +147,111 @@
     <div class="container-fluid features pt-5 pb-5 bg-gray">
       <div class="container">
         <p class="text-center">Почему вы должны выбрать именно нас?</p>
-        <h2 class="mb-5 font-big text-center ">Наши преимущества</h2>
+        <h2 class="mb-5 font-big text-center" style="color:#eb86c4;">Наши преимущества</h2>
         <div class="row justify-content-md-center">
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-2 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Эксклюзивность</h3>
             <p>Мы сделаем вам вечерний макияж</p>
-
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-2 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Высокое качество</h3>
             <p>Мы сделаем вам вечерний макияж</p>
-
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-2 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Доступные цены</h3>
             <p>Мы сделаем вам вечерний макияж</p>
-
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-2 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Доступные цены</h3>
             <p>Мы сделаем вам вечерний макияж</p>
-
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-2 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Доступные цены</h3>
             <p>Мы сделаем вам вечерний макияж</p>
-
-
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid services pt-5 pb-5 bg-gray">
+    <div class="container-fluid services pt-5 pb-5" id="services">
       <div class="container">
         <p class="text-center">Что мы предлагаем</p>
-        <h2 class="mb-5 font-big text-center ">Наши услуги</h2>
+        <h2 class="mb-5 font-big text-center " style="color:#eb86c4;">Наши услуги</h2>
         <div class="row justify-content-md-center">
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
             <div class="mb-3">
               <img src="img/ser-1.png" alt="">
             </div>
             <h3 class="pb-3">Вечерний макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
             <div class="mb-3">
               <img src="img/ser-2.png" alt="">
             </div>
             <h3 class="pb-3">Вечерний макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
             <div class="mb-3">
               <img src="img/ser-3.png" alt="">
             </div>
             <h3 class="pb-3">Вечерний макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
             <h3 class="pb-3">Вечерний макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
-
           </div>
-          <div class="col-md-2 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4" id="last">
             <div class="mb-3">
               <img src="img/ser-5.png" alt="">
             </div>
             <h3 class="pb-3">Вечерний макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
-
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid about pt-5 pb-5">
+    <div class="container-fluid about  pt-5 pb-5">
       <div class="row justify-content-center text-white text-center">
-        <div class="col-md-2 height-450 bg-1 align-items-center">
-          <div class=" d-flex">
+        <div class="col-md-13 height-450 bg bg-1 align-items-center p-0">
             <h2 class="font-weight-bold">Тело</h2>
-          </div>
         </div>
-        <div class="col-md-2 height-450 bg-2">
+        <div class="col-md-13 height-450 bg bg-2 p-0">
           <h2 class="font-weight-bold">Волосы</h2>
         </div>
-        <div class="col-md-2 height-450 bg-3">
+        <div class="col-md-13 height-450 bg bg-3 p-0">
           <h2 class="font-weight-bold">Лицо</h2>
         </div>
-        <div class="col-md-2 height-450 bg-4">
+        <div class="col-md-13 height-450 bg bg-4 p-0">
           <h2 class="font-weight-bold">Ногти</h2>
         </div>
-        <div class="col-md-2 height-450 bg-5">
+        <div class="col-md-13 height-450 bg bg-5 p-0">
           <h2 class="font-weight-bold">Глаза</h2>
         </div>
-
-
       </div>
     </div>
     <div class="container-fluid gifts pt-5 pb-5">
@@ -273,14 +261,12 @@
         <div class="row">
           <div class="col-md-5 p-5 bg-gray">
             <h2 class="mb-5" style="font-size: 48px;">Волосы</h2>
-
             <p class="text-left">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
             <button class="btn mt-5 text-white btn-round bg-pink"><a>ПОДРОБНЕЕ</a></button>
           </div>
           <div class="col-md-7 p-5 text-left gifts-bg">
             <div class="w-75">
               <h2 class="mb-5" style="font-size: 48px;">Краска</h2>
-
               <p class="text-left">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
               <button class="btn mt-5 text-white btn-round bg-pink"><a>ПОДРОБНЕЕ</a></button>
             </div>
@@ -288,99 +274,58 @@
         </div>
       </div>
     </div>
-
-
-
-
     <div class="container page-top">
-
-
-
       <div class="row">
-
-
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-
+            <img src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid " alt="">
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
+          <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+            <img src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid" alt="">
           </a>
         </div>
-
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+            <img src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid " alt="">
           </a>
         </div>
-
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+            <img src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid " alt="">
           </a>
         </div>
-
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+            <img src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid " alt="">
           </a>
         </div>
-
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+            <img src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid " alt="">
           </a>
         </div>
-
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+            <img src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid " alt="">
           </a>
         </div>
-
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-            <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+            <img src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid " alt="">
           </a>
         </div>
-
-
-
-
       </div>
-
-
-
-
     </div>
-
-
     <div class="container-fluid pt-5 pb-5">
+ <p class="text-center">Работы, которыми мы гордимся</p>
       <h2 class="mb-3 font-big text-center" style="color:#eb86c4;">Галерея</h2>
-      <div class="row">
-        <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="showall-tab" data-toggle="pill" href="#showall" role="tab" aria-controls="showall" aria-selected="true">Показать все</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="Cars-tab" data-toggle="pill" href="#Cars" role="tab" aria-controls="Cars" aria-selected="false">Cars</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="City-tab" data-toggle="pill" href="#City" role="tab" aria-controls="City" aria-selected="false">City</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="Forest-tab" data-toggle="pill" href="#Forest" role="tab" aria-controls="Forest" aria-selected="false">Forest</a>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
+            <div class="row">
         <div class="col-12 tab-content" id="pills-tabContent">
           <div class="container tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
             <div class="row">
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400"  alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
@@ -389,33 +334,15 @@
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-            </div>
-          </div>
-          <div class="container tab-pane fade" id="Cars" role="tabpanel" aria-labelledby="Cars-tab">
-            <div class="row">
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
               <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
             </div>
           </div>
-          <div class="container tab-pane fade" id="City" role="tabpanel" aria-labelledby="City-tab">
-            <div class="row">
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-            </div>
-          </div>
-          <div class="container tab-pane fade" id="Forest" role="tabpanel" aria-labelledby="Forest-tab">
-            <div class="row">
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-            </div>
-          </div>
+         <button class="btn mt-5 text-white btn-round bg-pink mx-auto d-flex"><a href="gallery.html" class="text-white">ПЕРЕЙТИ В ГАЛЕРЕЮ</a></button>
         </div>
       </div>
     </div>
-
     <div class="container-fluid testimonials pt-5 pb-5">
       <div class="container">
         <p class="text-center">Что говорят наши клиенты</p>
@@ -425,47 +352,36 @@
             <div class=" swiper-container swiper-container-horizontal">
               <div class="swiper-wrapper testimonials-container">
                 <div class="swiper-slide bg-white testimonials-item">
-
                   <p>«Виктория подобрала для юбилея моей супруги идеальный комплект украшений, который очень органично подошел к ее наряду.
-
                     Среди гостей моя жена была самой красивой и она, похоже, тоже это чувствовала. Я понял это по ее счастливой улыбке.»</p>
-
                   <span style="color: #999999;">Олег Петров,</span>
                   <span style="color: #999999;">довольный клиент</span>
                   <span style="color: #999999;">и счастливый муж.</span>
-
                 </div>
                 <div class=" swiper-slide bg-white testimonials-item">
-
                   <p>«Вы даже не представляете какую богиню могут с вас сотворить золотые руки Виктории! Мастер умело подчеркнул красоту и достоинства своими аксессуарами! Я и моя дочь осталась в восторге! За скидку отдельное спасибо»</p>
                   <span style="color: #999999;">Анна и Юлия,</span>
                   <span style="color: #999999;">удивленные клиентки</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-
                   <p>«Виктория изготовила брошь на заказ под пальто. Очень понравилась ее работа, хотя я раньше никогда не носила подобных украшений. Для меня особенно приятно, что я могу позволить себе выглядеть эксклюзивно каждый день. Спасибо!»</p>
                   <span style="color: #999999;">Мария,</span>
                   <span style="color: #999999;">довольный клиент</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-
                 <p>  «Благодарю мастера за прекрасную идею подарка для своей девушки!Она была очень удивлена и очарована тем, что создала для нее Виктория. Желаю успеха и удачи в работе!»</p>
                   <span style="color: #999999;">Анатолий,</span>
                   <span style="color: #999999;">благодарный клиент</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-
                  <p> «Я хочу поблагодарить Вашу студию, а именно золотые ручки Виктории. Интересная задумка, вовремя законченная работа, спокойствие и уверенность, заинтересованность, отзывчивость. Все в совокупности даёт мне полное право сказать огромное спасибо и смело рекомендовать другим модницам»</p>
                   <span style="color: #999999;">Виктория,</span>
                   <span style="color: #999999;">новая модница</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-
                 <p>  «Добрый день! Хотела бы выразить огромную благодарность мастеру! Она создала для меня невероятный образ, который всех покорил. Она настоящий профессионал своего дела, грамотный, аккуратный и внимательный мастер. Я очень рада, что именно ей доверила создать образ в самый важный день своей жизни. Большое спасибо!!!»</p>
-
                   <span style="color: #999999;">Екатерина,</span>
                   <span style="color: #999999;">довольная клиентка</span>
-
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -476,14 +392,11 @@
         </div>
       </div>
     </div>
-
-
     <div class="container-fluid prices pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h2 class="mb-5 font-big">Наши цены</h2>
-
             <table class="bg-gray w-100"><tr class="border border-white border-2">
               <td class="p-3">Свадебный макияж</td>
               <td class="p-3">1.5 часа</td>
@@ -504,7 +417,7 @@
                 <td class="p-3">1.5 часа</td>
                 <td class="p-3 font-weight-bold">$50.00</td>
               </tr></table>
-            <button class="btn mt-5 text-white btn-round bg-pink"><a>УВИДЕТЬ БОЛЬШЕ</a></button>
+            <button class="btn mt-5 text-white btn-round bg-pink"><a href="price.html" class="text-white">УВИДЕТЬ БОЛЬШЕ</a></button>
           </div>
         </div>
       </div>
@@ -522,7 +435,7 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div id="map" class="np-c14 np-c14-map"></div>
+        <div  id="map" class="np-c14 np-c14-map"></div>
         <div class="col-md-12">
           <div class="address-content" style="display:none;">
             <h3 class="font-weight-bold">Карта проезда и контакты</h3>
@@ -536,20 +449,29 @@
         </div>
       </div>
     </div>
-    <footer class="container-fluid text-white page-footer">
+
+
+
+
+
+
+
+
+
+    <footer class="container-fluid text-white page-footer" id="contacts">
       <div class="row justify-content-around bg-black  p-4">
-        <div class="col-md-5">
+        <div class="col-md-5 page-contacts">
           <h3 class="font-weight-bold">Наши контакты</h3>
           <span>Контактный телефон</span><br>
-          <p class="font-weight-bold mobile-block"><i class="fa fa-phone pr-3"></i>+375 (29) 650 - 14 - 35</p><br>
+          <p class="font-weight-bold mobile-block"><i class="fa fa-phone pr-3"></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></p><br>
           <span>Электронная почта</span><br>
-          <p class="font-weight-bold email-block"><i class="fa fa-envelope pr-3"></i>yulashik@gmail.com</p></div>
+          <p class="font-weight-bold email-block"><i class="fa fa-envelope pr-3"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></p></div>
         <div class="col-md-6 text-center">
           <h3 class="font-weight-bold pb-4">Подпишитесь на нас!</h3>
           <div class="social-list">
-            <a class="social-list__item   social-list__item--border-white social-list__item--vk" href="#">Вконтакте</a>
-            <a class="social-list__item    social-list__item--border-white  social-list__item--inst" href="#">Инстаграм</a>
-            <a class="social-list__item   social-list__item--border-white  social-list__item--ok" href="#">Одноклассники</a>
+            <a class="social-list__item  social-list__item--vk" href="https://vk.com/makeapgomel" target="_blank">Вконтакте</a>
+            <a class="social-list__item   social-list__item--inst" href="https://www.instagram.com/muamaskaliova/" target="_blank">Инстаграм</a>
+            <a class="social-list__item  social-list__item--ok" href="https://ok.ru/profile/118138808567" target="_blank">Одноклассники</a>
           </div>
         </div>
       </div>
@@ -558,13 +480,36 @@
           <p class="m-0">© Copyright Юлия Москалева 2018. <br> Все права защищены</p>
         </div>
         <div class="col-md-5 font-weight-bold text-right copyright-text">
-          <p>Сайт разработан <a href="http://vstudio.org.ru/" target=_blank>Vstudio</a></p>
+          <p>Сайт разработан <a href="http://vstudio.org.ru/" target="_blank">Vstudio</a></p>
         </div>
       </div>
     </footer>
+    <script>var mapFrame = document.getElementById('map');
+if (mapFrame) {
+    ymaps.ready(initMap)
+};
 
-
-
+function initMap() {
+    var myMap;
+    myMap = new ymaps.Map("map", {
+        center: [52.42613072, 31.00391352]
+        , zoom: 16
+        , controls: []
+    });
+    myMap.behaviors.disable('scrollZoom');
+    myMap.controls.add("zoomControl", {
+        position: {
+            top: 15
+            , left: 15
+        }
+    });
+    var myPlacemark = new ymaps.Placemark([59.938816, 30.323244], {}, {
+        iconLayout: 'default#image'
+        , iconImageHref: ('img/ser-4.png')
+        , iconImageSize: [35, 35]
+        , iconImageOffset: [-20, -47]
+    });
+    myMap.geoObjects.add(myPlacemark);
+};</script>
   </body>
-
 </html>

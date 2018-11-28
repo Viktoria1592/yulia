@@ -2,19 +2,67 @@
   height: 450px;
 }
 .bg {
+  position: relative;
+}
+.bg {
   &-1 {
     background: url("../img/treat2.jpg") no-repeat center;
+    background-size: cover;
   }
   &-2 {
     background: url("../img/treat3.jpg") no-repeat center;
+    background-size: cover;
   }
   &-3 {
     background: url("../img/treat4.jpg") no-repeat center;
+    background-size: cover;
   }
   &-4 {
     background: url("../img/treat5.jpg") no-repeat center;
+    background-size: cover;
   }
   &-5 {
     background: url("../img/treat2.jpg") no-repeat center;
+    background-size: cover;
   }
 }
+.overlay {
+  transition: 0.5s linear;
+  background: url("../img/wel-img.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: relative;
+  z-index: 99;
+}
+.block-mask {
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+  &:hover {
+    background-color: $color-pink;
+  }
+
+}
+.mask-1 {
+  position: absolute;
+  content: '';
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+  background-color: $color-pink;
+  border: 2px solid #fff;
+  display: none;
+  transition: 0.5s linear;
+  opacity: 0.5;
+
+}
+.overlay:hover {
+  transform: scale(1.08);
+
+}
+//.block-mask:hover .mask-1 {
+//  display: block;
+//}

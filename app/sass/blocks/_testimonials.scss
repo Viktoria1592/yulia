@@ -8,3 +8,56 @@
     display: flex;
   }
 }
+.button-prev ,
+.button-next {
+  position: absolute;
+  position: relative;
+  z-index: 10;
+  top: 50%;
+
+  width: 45px;
+  height: 45px;
+
+  cursor: pointer;
+
+  background-color: $color-pink;
+  &:hover {
+    background-color: $color-black;
+  }
+}
+.button-prev::before  {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+
+  width: 15px;
+  height: 15px;
+
+  content: "";
+  transform: rotate(-45deg);
+
+  border-top: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+}
+.button-next::after {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+
+  width: 15px;
+  height: 15px;
+
+  content: "";
+  transform: rotate(-45deg);
+
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.button-prev.button-disabled ,
+.button-next.button-disabled {
+  cursor: auto;
+  pointer-events: none;
+
+  background-color: $color-black;
+}

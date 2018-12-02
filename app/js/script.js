@@ -32,8 +32,8 @@
 			clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            nextEl: ".button-next",
+            prevEl: ".button-prev"
         },
         breakpoints: {
 			767: {
@@ -89,5 +89,18 @@ $(document).ready(function(){
 	}, function(){
 		$(this).removeClass('transition');
 	});
+});
+
+
+
+
+$(function () {
+  $('#carousel').carousel({
+    interval: 1000,
+    keyboard: false,
+    pause: 'false',
+    ride: 'carousel',
+    wrap: false
+  });
 });
 

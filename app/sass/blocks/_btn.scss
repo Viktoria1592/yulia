@@ -5,36 +5,67 @@
     cursor: pointer;
   }
 }
-.bg-none {
+.carousel-caption .bg-none {
   background-color: transparent;
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+    transition-property: transform;
+    transform: scaleY(0);
+    transform-origin: 50%;
+
+    border-radius: 0;
+    background-color: $color-white;
+  }
+  &:hover::after {
+    transform: scaleY(1);
+  }
+  &:hover a {
+    color: $color-pink!important;
+  }
 }
 .btn {
+  position: relative;
+  &:hover {
+    outline: none;
+  }
   a {
     position: relative;
+    z-index: 100;
     &:hover {
       text-decoration: none;
-      &::after {
-        transform: scaleY(1);
-      }
-    }
-    &::after {
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
 
-      content: "";
-      transition-timing-function: ease-out;
-      transition-duration: .3s;
-      transition-property: transform;
-      transform: scaleY(0);
-      transform-origin: 50%;
-
-      border-radius: 29px;
-      background-color: #1a1a1a;
-      background-color: $color-black;
+      color: $color-white;
     }
+  }
+  &::after {
+    position: absolute;
+    //      z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+    transition-property: transform;
+    transform: scaleY(0);
+    transform-origin: 50%;
+
+    border-radius: 29px;
+    background-color: $color-black;
+  }
+  &:hover::after {
+    //    background-color: $color-black;
+    transform: scaleY(1);
   }
 }

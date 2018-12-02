@@ -21,16 +21,25 @@
     }
   }
   & .col-md-13 {
-    border-right: none!important;
-   transition-duration: 0.5s;
+    transition-duration: .5s;
     transition-property: transform;
+
+    border-right: none!important;
     &#last {
       border-right: 1px solid $color-pink!important;
     }
     &:hover {
       transform: scale(1.1);
-      background-color:$color-pink;
+
       color: $color-white;
+      background-color: $color-pink;
+    }
+  }
+}
+.service-item {
+  &:hover {
+    & img {
+      filter: invert(100%);
     }
   }
 }

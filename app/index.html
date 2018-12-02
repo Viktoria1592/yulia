@@ -46,7 +46,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav justify-content-around" id="headerMenu">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                <a class="nav-link">Главная <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">О нас</a>
@@ -71,9 +71,9 @@
     <div class="container-fluid p-0 slider">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" data-interval="1000" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1" data-interval="1000"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2" data-interval="1000"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" data-interval="1000" data-pause="false" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" data-interval="1000" data-pause="false"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" data-interval="1000" data-pause="false"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -119,13 +119,13 @@
         <div class="row justify-content-md-between">
           <div class="col-md-4">
             <h2 class="mb-5">Добро пожаловать к <span style="color:#eb86c4; font-size: 48px;">Юлии</span></h2>
-            <p class="text-left">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
-            <button class="btn mt-5 text-white btn-round bg-pink"><a href="about.html" class="text-white">ПОДРОБНЕЕ</a></button>
+            <p class="text-left mb-5">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
+            <button class="btn text-white btn-round bg-pink"><a href="about.html" class="text-white">ПОДРОБНЕЕ</a></button>
           </div>
-          <div class="col-md-4 block-mask p-0">
-          <div class="overlay"></div>
-<!--            <img src="img/wel-img.jpg" alt="">-->
-            <div class="mask-1"></div>
+          <div class="col-md-4 p-0 block-mask">
+            <img src="img/wel-img.jpg" alt="">
+            <figcaption></figcaption>
+<!--          <div class="overlay"></div>-->
             </div>
           <div class="col-md-4 text-center text-white">
             <table class="bg-pink w-100"><tr class="border border-white border-2 font-weight-bold">
@@ -144,40 +144,33 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid features pt-5 pb-5 bg-gray">
+   <div class="container-fluid features pt-5 pb-5 bg-gray">
       <div class="container">
         <p class="text-center">Почему вы должны выбрать именно нас?</p>
         <h2 class="mb-5 font-big text-center" style="color:#eb86c4;">Наши преимущества</h2>
         <div class="row justify-content-md-center">
-          <div class="col-md-2 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
-            <h3 class="pb-3">Эксклюзивность</h3>
+            <h3 class="pb-3">Эксклюзивность работы</h3>
             <p>Мы сделаем вам вечерний макияж</p>
           </div>
-          <div class="col-md-2 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Высокое качество</h3>
             <p>Мы сделаем вам вечерний макияж</p>
           </div>
-          <div class="col-md-2 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
-            <h3 class="pb-3">Доступные цены</h3>
+            <h3 class="pb-3">Профессиональная косметика</h3>
             <p>Мы сделаем вам вечерний макияж</p>
           </div>
-          <div class="col-md-2 text-center pt-4 pb-4">
-            <div class="mb-3">
-              <img src="img/icon121.png" alt="">
-            </div>
-            <h3 class="pb-3">Доступные цены</h3>
-            <p>Мы сделаем вам вечерний макияж</p>
-          </div>
-          <div class="col-md-2 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
@@ -187,28 +180,28 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid services pt-5 pb-5" id="services">
+   <div class="container-fluid services pt-5 pb-5" id="services">
       <div class="container">
         <p class="text-center">Что мы предлагаем</p>
         <h2 class="mb-5 font-big text-center " style="color:#eb86c4;">Наши услуги</h2>
         <div class="row justify-content-md-center">
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
             <div class="mb-3">
               <img src="img/ser-1.png" alt="">
             </div>
-            <h3 class="pb-3">Вечерний макияж</h3>
+            <h3 class="pb-3">Свадебный макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
             <div class="mb-3">
               <img src="img/ser-2.png" alt="">
             </div>
-            <h3 class="pb-3">Вечерний макияж</h3>
+            <h3 class="pb-3">Дневной макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
             <div class="mb-3">
               <img src="img/ser-3.png" alt="">
             </div>
@@ -216,41 +209,91 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
-            <h3 class="pb-3">Вечерний макияж</h3>
+            <h3 class="pb-3">Возрастной (лифтинг) макияж</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4" id="last">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item" id="last">
             <div class="mb-3">
               <img src="img/ser-5.png" alt="">
             </div>
-            <h3 class="pb-3">Вечерний макияж</h3>
+            <h3 class="pb-3">Детский макияж</h3>
+            <p>Мы сделаем вам вечерний макияж</p>
+            <span>$50.00</span>
+          </div>
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+            <div class="mb-3">
+              <img src="img/ser-4.png" alt="">
+            </div>
+            <h3 class="pb-3">Мужской макияж</h3>
+            <p>Мы сделаем вам вечерний макияж</p>
+            <span>$50.00</span>
+          </div>
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+            <div class="mb-3">
+              <img src="img/ser-4.png" alt="">
+            </div>
+            <h3 class="pb-3">Макияж для фотосессии (портфолио)</h3>
+            <p>Мы сделаем вам вечерний макияж</p>
+            <span>$50.00</span>
+          </div>
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+            <div class="mb-3">
+              <img src="img/ser-4.png" alt="">
+            </div>
+            <h3 class="pb-3">Деловой макияж</h3>
+            <p>Мы сделаем вам вечерний макияж</p>
+            <span>$50.00</span>
+          </div>
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+            <div class="mb-3">
+              <img src="img/ser-4.png" alt="">
+            </div>
+            <h3 class="pb-3">Фантазийный макияж</h3>
+            <p>Мы сделаем вам вечерний макияж</p>
+            <span>$50.00</span>
+          </div>
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item" id="last">
+            <div class="mb-3">
+              <img src="img/ser-4.png" alt="">
+            </div>
+            <h3 class="pb-3">Окраска, моделирование бровей, биотатуаж хной</h3>
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid about  pt-5 pb-5">
+  <div class="container-fluid about  pt-5 pb-5">
       <div class="row justify-content-center text-white text-center">
-        <div class="col-md-13 height-450 bg bg-1 align-items-center p-0">
-            <h2 class="font-weight-bold">Тело</h2>
+        <div class="col-md-13 height-450 align-items-center p-0 block-mask-1">
+         <img src="img/treat2.jpg" alt="">
+<div class="mask-2"></div>
+            <a href="" class="text-white"><div class="visible-block d-flex align-items-center justify-content-center"><h2 class="font-weight-bold">Тело</h2></div></a>
         </div>
-        <div class="col-md-13 height-450 bg bg-2 p-0">
-          <h2 class="font-weight-bold">Волосы</h2>
+        <div class="col-md-13 height-450 p-0 block-mask-1">
+         <img src="img/treat3.jpg" alt="">
+<div class="mask-2"></div>
+          <a href="" class="text-white"><div class="visible-block d-flex align-items-center justify-content-center"><h2 class="font-weight-bold">Волосы</h2></div></a>
         </div>
-        <div class="col-md-13 height-450 bg bg-3 p-0">
-          <h2 class="font-weight-bold">Лицо</h2>
+        <div class="col-md-13 height-450  p-0 block-mask-1">
+         <img src="img/treat4.jpg" alt="">
+<div class="mask-2"></div>
+          <a href="" class="text-white"><div class="visible-block d-flex align-items-center justify-content-center"><h2 class="font-weight-bold">Лицо</h2></div></a>
         </div>
-        <div class="col-md-13 height-450 bg bg-4 p-0">
-          <h2 class="font-weight-bold">Ногти</h2>
+        <div class="col-md-13 height-450 p-0 block-mask-1">
+         <img src="img/treat5.jpg" alt="">
+<div class="mask-2"></div>
+          <a href="" class="text-white"><div class="visible-block d-flex align-items-center justify-content-center"><h2 class="font-weight-bold">Ногти</h2></div></a>
         </div>
-        <div class="col-md-13 height-450 bg bg-5 p-0">
-          <h2 class="font-weight-bold">Глаза</h2>
+        <div class="col-md-13 height-450 p-0 block-mask-1">
+        <img src="img/treat2.jpg" alt="">
+<div class="mask-2"></div>
+          <a href="" class="text-white"><div class="visible-block d-flex align-items-center justify-content-center"><h2 class="font-weight-bold">Глаза</h2></div></a>
         </div>
       </div>
     </div>
@@ -343,7 +386,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid testimonials pt-5 pb-5">
+   <div class="container-fluid testimonials pt-5 pb-5">
       <div class="container">
         <p class="text-center">Что говорят наши клиенты</p>
         <h2 class="mb-5 font-big text-center" style="color:#eb86c4;">Отзывы</h2>
@@ -352,47 +395,48 @@
             <div class=" swiper-container swiper-container-horizontal">
               <div class="swiper-wrapper testimonials-container">
                 <div class="swiper-slide bg-white testimonials-item">
-                  <p>«Виктория подобрала для юбилея моей супруги идеальный комплект украшений, который очень органично подошел к ее наряду.
-                    Среди гостей моя жена была самой красивой и она, похоже, тоже это чувствовала. Я понял это по ее счастливой улыбке.»</p>
-                  <span style="color: #999999;">Олег Петров,</span>
-                  <span style="color: #999999;">довольный клиент</span>
-                  <span style="color: #999999;">и счастливый муж.</span>
+                <p>«Юлия - великолепный мастер своего дела, который работает с оригинальным подходом к каждому клиенту. Используется популярная косметическая продукция высокого качества, создаётся великолепный образ, который держится очень долго! Также Юлия очень позитивная. Мне все очень понравилось, я была в восторге от макияжа. Обязательно буду обращаться ещё раз! Спасибо за такую волшебную и прекрасную работу!»</p>
+                  <span style="color: #999999;">София Голод</span>
+                </div>
+                <div class="swiper-slide bg-white testimonials-item">
+                  <p>«Юленька - мастер своего дела и большая умничка! Благодаря ей в день своей свадьбы я выглядела просто супер! Столько комплиментов от гостей наслушалась! К слову, макияж держался до позднего вечера (пока я сама его не смыла) и даже фотосессия под палящим солнцем была ему нипочем. Вот что значит работа профессионала!»</p>
+                  <span style="color: #999999;">Юлия</span>
                 </div>
                 <div class=" swiper-slide bg-white testimonials-item">
-                  <p>«Вы даже не представляете какую богиню могут с вас сотворить золотые руки Виктории! Мастер умело подчеркнул красоту и достоинства своими аксессуарами! Я и моя дочь осталась в восторге! За скидку отдельное спасибо»</p>
-                  <span style="color: #999999;">Анна и Юлия,</span>
-                  <span style="color: #999999;">удивленные клиентки</span>
+                  <p>«Самый любимый визажист!! Юля меня спасла. Своим макияжем для съемки, все было на высшем уровне. Макияж держался весь день, не потек, даже помада с губ не слезла в процессе еды. Очень ей благодарна!! Мастер своего дела. Всегда теперь только к ней. Плюс она делает офигенные брови, много чего перепробовала. Но именно она поняла то, что мне нужно было.
+И ко всему она прекрасный человек!»</p>
+                  <span style="color: #999999;">Алёна Владимирова</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-                  <p>«Виктория изготовила брошь на заказ под пальто. Очень понравилась ее работа, хотя я раньше никогда не носила подобных украшений. Для меня особенно приятно, что я могу позволить себе выглядеть эксклюзивно каждый день. Спасибо!»</p>
-                  <span style="color: #999999;">Мария,</span>
-                  <span style="color: #999999;">довольный клиент</span>
+                  <p>«Сегодня мне удалось побывать у замечательного и талантливого мастера Юлечки! Она действительно мастер своего дела! Качество работы - 100%. Ни на минуту не пожалела,что попала к ней,теперь свои бровки доверяю исключительно ей! К тому же безумно милая и приятна в общении девушка. В общем,девчонки,потрясающий мастер,советую,останетесь довольны!»</p>
+                  <span style="color: #999999;">Катерина Лисовая</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-                <p>  «Благодарю мастера за прекрасную идею подарка для своей девушки!Она была очень удивлена и очарована тем, что создала для нее Виктория. Желаю успеха и удачи в работе!»</p>
-                  <span style="color: #999999;">Анатолий,</span>
-                  <span style="color: #999999;">благодарный клиент</span>
+                <p>«Спасибо большое за нереально крутой свадебный макияж! Была в восторге не только я, но и все гости. Продержался долго очень, вынес все тяготы очень жаркого дня. Ещё и на второй день ходила с ним. Супер! Ещё раз большое спасибо!! Не пожалела, что обратилась именно к вам!»</p>
+                  <span style="color: #999999;">Алина Лучкина</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-                 <p> «Я хочу поблагодарить Вашу студию, а именно золотые ручки Виктории. Интересная задумка, вовремя законченная работа, спокойствие и уверенность, заинтересованность, отзывчивость. Все в совокупности даёт мне полное право сказать огромное спасибо и смело рекомендовать другим модницам»</p>
-                  <span style="color: #999999;">Виктория,</span>
-                  <span style="color: #999999;">новая модница</span>
+                 <p>«Профессионализм,внимание к деталям,простота в общении и чувство юмора - не сомневайтесь,Юля сделает из вас конфетку;) Р.S: Спасибо за мэйк!»</p>
+                  <span style="color: #999999;">Анастасия Петрусенко</span>
                 </div>
                 <div class="swiper-slide bg-white testimonials-item">
-                <p>  «Добрый день! Хотела бы выразить огромную благодарность мастеру! Она создала для меня невероятный образ, который всех покорил. Она настоящий профессионал своего дела, грамотный, аккуратный и внимательный мастер. Я очень рада, что именно ей доверила создать образ в самый важный день своей жизни. Большое спасибо!!!»</p>
-                  <span style="color: #999999;">Екатерина,</span>
-                  <span style="color: #999999;">довольная клиентка</span>
+                <p>«Первый визажист, кому доверила свои бровки. Искренняя, общительная, профессионал своего дела! Очень довольна результатом! Спасибо тебе, Юлечка, ещё раз! Надеюсь, будем дальше наводить красоту.»</p>
+                  <span style="color: #999999;">Марина Киреева</span>
+                </div>
+                 <div class="swiper-slide bg-white testimonials-item">
+                <p>«В своём деле - мастер. Очень понравился макияж, очень аккуратно, это то, что я всегда хотела, но не могла доверить никому,а Юля воплотила мою мечту! Теперь я постоянный клиент.»</p>
+                  <span style="color: #999999;">Кристина Смирнова</span>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="button-prev"></div>
+              <div class="button-next"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid prices pt-5 pb-5">
+   <div class="container-fluid prices pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -413,7 +457,7 @@
                 <td class="p-3 font-weight-bold">$50.00</td>
               </tr>
               <tr class="border border-white border-2">
-                <td class="p-3">Наращивание ресниц</td>
+                <td class="p-3">Биотатуаж хной</td>
                 <td class="p-3">1.5 часа</td>
                 <td class="p-3 font-weight-bold">$50.00</td>
               </tr></table>

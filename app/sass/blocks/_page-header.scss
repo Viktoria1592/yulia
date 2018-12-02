@@ -3,7 +3,7 @@
     color: $color-pink;
   }
 
-  & a {
+  & a[href] {
     &:hover {
       text-decoration: none;
 

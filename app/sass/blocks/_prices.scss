@@ -1,4 +1,12 @@
 .prices {
   background: url("../img/price-bg.jpg") no-repeat center;
   background-size: cover;
+  & .bg-gray:hover {
+    cursor: pointer;
+    color: $color-white;
+    background-color: $color-pink!important;
+  }
+}
+.fa-clock-o {
+  padding-right: 5px;
 }

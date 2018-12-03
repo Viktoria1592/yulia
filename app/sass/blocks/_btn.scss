@@ -69,3 +69,36 @@
     transform: scaleY(1);
   }
 }
+#back-top {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+      display: none;
+  cursor: pointer;
+  & a {
+    font: 11px/100% Arial,Helvetica,sans-serif;
+
+    display: block;
+
+    width: 64px;
+
+    transition: 1s;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #bbbbbb;
+  }
+  & span {
+    display: block;
+
+    width: 64px;
+    height: 62px;
+    margin-bottom: 7px;
+
+    transition: 1s;
+
+    opacity: .7;
+    background: url("../img/up-arrow.png") no-repeat center center;
+  }
+}

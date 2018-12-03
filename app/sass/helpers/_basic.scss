@@ -82,6 +82,8 @@ img {
 
 
 .bg-gray {
+  transition: .5s linear;
+
   background-color: $color-bg;
 }
 .bg-deep-gray {

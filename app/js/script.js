@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 
 $(function () {
-  $('#carousel').carousel({
+  $('#carouselExampleIndicators').carousel({
     interval: 1000,
     keyboard: false,
     pause: 'false',

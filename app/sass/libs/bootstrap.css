@@ -2592,6 +2592,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
+  border:none!important;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;

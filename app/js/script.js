@@ -1,29 +1,10 @@
-
-	$("#headerMenu").on("click","a", function (event) {
-	    event.preventDefault();
-	    var id  = $(this).attr('href'),
-	        top = $(id).offset().top;
-	    $('body,html').animate({scrollTop: top}, 1500);
-	});
-  $("#services").on("click","a", function (event) {
-	    event.preventDefault();
-	    var id  = $(this).attr('href'),
-	        top = $(id).offset().top;
-	    $('body,html').animate({scrollTop: top}, 1500);
-	});
-    $("#contacts").on("click","a", function (event) {
-	    event.preventDefault();
-	    var id  = $(this).attr('href'),
-	        top = $(id).offset().top;
-	    $('body,html').animate({scrollTop: top}, 1500);
-	});
-
-
-      window.onload = function() {
+window.onload = function() {
     new Swiper(".swiper-container",{
         slidesPerView: 2,
 		spaceBetween: 30,
         speed: 400,
+        longSwipesMs: 200,
+        loop: true,
         autoplay: {
         delay: 5000,
         },
@@ -96,11 +77,8 @@ $(document).ready(function(){
 
 $(function () {
   $('#carouselExampleIndicators').carousel({
-    interval: 1000,
-    keyboard: false,
+    interval: 5000,
     pause: 'false',
-    ride: 'carousel',
-    wrap: false
   });
 });
 

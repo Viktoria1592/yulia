@@ -10,9 +10,10 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/libs/swiper.min.css">
      <link rel="stylesheet" href="css/libs/animate.min.css">
+<!--      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <script src="js/libs/wow.min.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
@@ -27,14 +28,20 @@
 <meta name="msapplication-TileImage" content="static/favicons/mstile-144x144.png">
 <meta name="msapplication-config" content="static/favicons/browserconfig.xml">
 <meta name="theme-color" content="#f57de3"></head>
-  <body>
+  <body id="top">
     <header class="container-fluid pade-header">
       <div class="row text-white p-3 pl-4 bg-deep-gray">
         <div>
-          <div class="phone-number font-weight-bold pl-1 pb-2"><i class="fa fa-phone pr-2 "></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></div>
+          <div class="email font-weight-bold pl-1 pb-2"><i class="fa fa-envelope pr-2"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></div>
           <div class="font-weight-bold" style="font-size:18px; line-height:1">Студия красоты <br>Юлии Москалевой</div>
-        </div>
-        <div class="email font-weight-bold pl-5"><i class="fa fa-envelope pr-2"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></div>
+      </div>
+<div class="pl-5 font-weight-bold">
+        <div class="phone-number"><i class="fa fa-phone pr-2 "></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></div>
+<div class="location"><i class="fa fa-map-marker pr-2 "></i>г. Гомель, Беларусь</div>
+</div>
+<div class="time font-weight-bold" style="margin-left:auto;"><i class="fa fa-clock-o pr-2 "></i>Время работы:<br>
+ПН - ПТ: 9.00 - 20.00 <br>
+СБ - ВС: 13.00 - 17.00</div>
       </div>
       <div class="row  p-4 bg-black">
         <div class="logo">
@@ -46,7 +53,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-around" id="headerMenu">
+            <ul class="navbar-nav justify-content-around font-weight-bold" id="headerMenu">
               <li class="nav-item active">
                 <a class="nav-link">Главная <span class="sr-only">(current)</span></a>
               </li>
@@ -73,9 +80,9 @@
     <div class="container-fluid p-0 slider">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" data-interval="1000" data-pause="false" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1" data-interval="1000" data-pause="false"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2" data-interval="1000" data-pause="false"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -118,7 +125,7 @@
     </div>
     <div class="container-fluid about pt-5 pb-5">
       <div class="container">
-        <div class="row justify-content-md-between">
+        <div class="row justify-content-md-between wow fadeIn" data-wow-delay="0.5s">
           <div class="col-md-4">
             <h2 class="mb-5">Добро пожаловать к <span style="color:#eb86c4; font-size: 48px;">Юлии</span></h2>
             <p class="text-left mb-5">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
@@ -151,28 +158,28 @@
         <p class="text-center">Почему вы должны выбрать именно нас?</p>
         <h2 class="mb-5 font-big text-center" style="color:#eb86c4;">Наши преимущества</h2>
         <div class="row justify-content-md-center">
-          <div class="col-md-3 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4 wow fadeIn">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Эксклюзивность работы</h3>
             <p>Мы сделаем вам вечерний макияж</p>
           </div>
-          <div class="col-md-3 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4 wow fadeIn" data-wow-delay="0.5s">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Высокое качество</h3>
             <p>Мы сделаем вам вечерний макияж</p>
           </div>
-          <div class="col-md-3 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4 wow fadeIn" data-wow-delay="1s">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
             <h3 class="pb-3">Профессиональная косметика</h3>
             <p>Мы сделаем вам вечерний макияж</p>
           </div>
-          <div class="col-md-3 text-center pt-4 pb-4">
+          <div class="col-md-3 text-center pt-4 pb-4 wow fadeIn" data-wow-delay="1.5s">
             <div class="mb-3">
               <img src="img/icon121.png" alt="">
             </div>
@@ -187,7 +194,7 @@
         <p class="text-center">Что мы предлагаем</p>
         <h2 class="mb-5 font-big text-center " style="color:#eb86c4;">Наши услуги</h2>
         <div class="row justify-content-md-center">
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item wow zoomIn" data-wow-delay="0.5s">
             <div class="mb-3">
               <img src="img/ser-1.png" alt="">
             </div>
@@ -195,7 +202,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item wow zoomIn" data-wow-delay="1s">
             <div class="mb-3">
               <img src="img/ser-2.png" alt="">
             </div>
@@ -203,7 +210,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item wow zoomIn" data-wow-delay="1.5s">
             <div class="mb-3">
               <img src="img/ser-3.png" alt="">
             </div>
@@ -211,7 +218,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item wow zoomIn" data-wow-delay="2s">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
@@ -219,7 +226,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item" id="last">
+          <div class="col-md-13 text-center border border-pink pt-4 pb-4 mb-3 service-item wow zoomIn" id="last" data-wow-delay="2.5s">
             <div class="mb-3">
               <img src="img/ser-5.png" alt="">
             </div>
@@ -227,7 +234,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item wow zoomIn" data-wow-delay="3s">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
@@ -235,7 +242,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item wow zoomIn" data-wow-delay="3.5s">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
@@ -243,7 +250,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item wow zoomIn" data-wow-delay="4s">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
@@ -251,7 +258,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item">
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item wow zoomIn" data-wow-delay="4.5s">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
@@ -259,7 +266,7 @@
             <p>Мы сделаем вам вечерний макияж</p>
             <span>$50.00</span>
           </div>
-<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item" id="last">
+<div class="col-md-13 text-center border border-pink pt-4 pb-4 service-item wow zoomIn" id="last" data-wow-delay="5s">
             <div class="mb-3">
               <img src="img/ser-4.png" alt="">
             </div>
@@ -270,8 +277,8 @@
         </div>
       </div>
     </div>
-  <div class="container-fluid about  pt-5 pb-5">
-      <div class="row justify-content-center text-white text-center">
+  <div class="container-fluid about  pt-5 pb-5"> 
+      <div class="row justify-content-center text-white text-center wow fadeIn" data-wow-delay="0.5s">
         <div class="col-md-13 height-550 align-items-center p-0 block-mask-1">
          <img src="img/treat2.jpg" alt="">
 <div class="mask-2"></div>
@@ -304,12 +311,12 @@
         <p class="text-center">Что мы предлагаем</p>
         <h2 class="mb-5 font-big text-center" style="color:#eb86c4;">Специальные предложения</h2>
         <div class="row">
-          <div class="col-md-5 p-5 bg-gray">
+          <div class="col-md-5 p-5 bg-gray wow fadeIn">
             <h2 class="mb-5" style="font-size: 48px;">Волосы</h2>
             <p class="text-left">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
             <button class="btn mt-5 text-white btn-round bg-pink"><a>ПОДРОБНЕЕ</a></button>
           </div>
-          <div class="col-md-7 p-5 text-left gifts-bg">
+          <div class="col-md-7 p-5 text-left gifts-bg wow fadeIn" data-wow-delay="0.5s">
             <div class="w-75">
               <h2 class="mb-5" style="font-size: 48px;">Краска</h2>
               <p class="text-left">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
@@ -366,22 +373,22 @@
     <div class="container-fluid pt-5 pb-5">
  <p class="text-center">Работы, которыми мы гордимся</p>
       <h2 class="mb-3 font-big text-center" style="color:#eb86c4;">Галерея</h2>
-            <div class="row">
+            <div class="row wow fadeIn">
         <div class="col-12 tab-content" id="pills-tabContent">
           <div class="container tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
             <div class="row">
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
-              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="0.5s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="0.7s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="1s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="1.2s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="1.5s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="1.7s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="2s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="2.2s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="2.5s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="2.7s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="3s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
+              <div class="Portfolio col-lg-3 col-md-4 col-xs-6 thumb wow fadeIn" data-wow-delay="3.2s"><a href="#!" class="fancybox" rel="ligthbox"><img class="card-img zoom img-fluid" src="http://placehold.it/400x400" alt=""></a></div>
             </div>
           </div>
          <button class="btn mt-5 text-white btn-round bg-pink mx-auto d-flex"><a href="gallery.html" class="text-white">ПЕРЕЙТИ В ГАЛЕРЕЮ</a></button>
@@ -392,7 +399,7 @@
       <div class="container">
         <p class="text-center">Что говорят наши клиенты</p>
         <h2 class="mb-5 font-big text-center" style="color:#eb86c4;">Отзывы</h2>
-        <div class="row">
+        <div class="row wow fadeIn">
           <div class="col-md-8 offset-md-4">
             <div class=" swiper-container swiper-container-horizontal">
               <div class="swiper-wrapper testimonials-container">
@@ -440,7 +447,7 @@
     </div>
    <div class="container-fluid prices pt-5 pb-5">
       <div class="container">
-        <div class="row">
+        <div class="row wow fadeIn" data-wow-delay="0.5s">
           <div class="col-md-6">
             <h2 class="mb-5 font-big">Наши цены</h2>
             <table class="w-100"><tr class="border border-white border-2 bg-gray">
@@ -470,7 +477,7 @@
     </div>
     <div class="container-fluid sales pt-5 pb-5">
       <div class="container">
-        <div class="row">
+        <div class="row wow fadeIn" data-wow-delay="0.5s">
           <div class="col-md-12 text-center text-white">
             <p class="mb-1 font-middle text-uppercase">Хотите выглядеть неотразимо? Все это вы можете получить, написав нам!</p>
             <h2 class="mt-3 mb-3 font-big text-uppercase">Получите свой подарок прямо сейчас!</h2>
@@ -530,9 +537,13 @@
         </div>
       </div>
     </footer>
-    <div id="back-top">
+    <p id="back-top">
 		<a title="Наверх" href="#top"><span></span></a>
-	</div>
+	</p>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script>var mapFrame = document.getElementById('map');
 if (mapFrame) {
     ymaps.ready(initMap)

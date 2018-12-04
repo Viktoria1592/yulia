@@ -1,24 +1,32 @@
-var limit = $(window).height()/3,
-	var backTop = $('#back-top');
-// при прокрутке окна (window)
-// если пользователь прокрутил страницу более чем на 200px
- // то сделать кнопку scrollup видимой
-$(window).scroll(function () {
-	if ( $(this).scrollTop() > limit ) {
-		backTop.fadeIn();
-       // иначе скрыть кнопку scrollup
-	} else {
-		backTop.fadeOut();
-	}
+$(document).ready(function(){
+	// прячем кнопку #back-top
+	$("#back-top").hide();
+	
+	// появление/затухание кнопки #back-top
+	$(function (){
+		$(window).scroll(function (){
+			if ($(this).scrollTop() > 100){
+				$('#back-top').fadeIn();
+			} else{
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// при клике на ссылку плавно поднимаемся вверх
+		$('#back-top a').click(function (){
+			$('body,html').animate({
+				scrollTop:0
+			}, 800);
+			return false;
+		});
+	});
 });
 
-// scroll body to 0px on click
-// при нажатии на кнопку scrollup
-// переместиться в верхнюю часть страницы
-backTop.click(function () {
-	$('body,html').animate({
-		scrollTop: 0
-	}, 1500);
-	return false;
+$(document).ready(function(){
+	// плавное перемещение страницы к нужному блоку
+	$("nav li a").click(function () {
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top;
+		$("body,html").animate({scrollTop: destination }, 1500);
+	});
 });
-

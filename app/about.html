@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/libs/swiper.min.css">
+     <link rel="stylesheet" href="css/libs/animate.min.css">
+<!--      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="js/libs/wow.min.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
@@ -46,7 +49,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-around" id="headerMenu">
+            <ul class="navbar-nav justify-content-around font-weight-bold" id="headerMenu">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Главная</a>
       </li>
@@ -73,14 +76,17 @@
 
 <div class="container-fluid about pt-5 pb-5">
       <div class="container">
-        <div class="row justify-content-md-between">
+        <div class="row justify-content-md-between wow fadeIn" data-wow-delay="0.5s">
           <div class="col-md-4">
             <h2 class="mb-5">Добро пожаловать к <span style="color:#eb86c4; font-size: 48px;">Юлии</span></h2>
-            <p class="text-left">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
-            <button class="btn mt-5 text-white btn-round bg-pink"><a href="about.html" class="text-white">ПОДРОБНЕЕ</a></button>
+            <p class="text-left mb-5">Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж. Мы сделаем вам вечерний макияж.</p>
+            <button class="btn text-white btn-round bg-pink"><a href="about.html" class="text-white">ПОДРОБНЕЕ</a></button>
           </div>
-          <div class="col-md-4">
-            <img src="img/wel-img.jpg" alt=""></div>
+          <div class="col-md-4 p-0 block-mask">
+            <img src="img/wel-img.jpg" alt="">
+            <figcaption></figcaption>
+<!--          <div class="overlay"></div>-->
+            </div>
           <div class="col-md-4 text-center text-white">
             <table class="bg-pink w-100"><tr class="border border-white border-2 font-weight-bold">
               <td class="p-4" style="font-size:34px;">Часы работы</td>
@@ -140,6 +146,13 @@
         </div>
       </div>
     </footer>
+    <p id="back-top">
+		<a title="Наверх" href="#top"><span></span></a>
+	</p>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script>var mapFrame = document.getElementById('map');
 if (mapFrame) {
     ymaps.ready(initMap)

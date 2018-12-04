@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <title>Обучение - Визажист Юлия Москалева</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.min.css">
+     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/libs/swiper.min.css">
+     <link rel="stylesheet" href="css/libs/animate.min.css">
+<!--      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="js/libs/wow.min.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
@@ -46,7 +49,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-around" id="headerMenu">
+            <ul class="navbar-nav justify-content-around font-weight-bold" id="headerMenu">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Главная</a>
       </li>
@@ -113,6 +116,13 @@
         </div>
       </div>
     </footer>
+     <p id="back-top">
+		<a title="Наверх" href="#top"><span></span></a>
+	</p>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script>var mapFrame = document.getElementById('map');
 if (mapFrame) {
     ymaps.ready(initMap)

@@ -1,4 +1,8 @@
 .services {
+  & img {
+    width: 86px;
+    height: 86px;
+  }
   & .border-pink {
     border-color: $color-pink!important;
   }

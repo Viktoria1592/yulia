@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Цены - Визажист Юлия Москалева</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!--    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/libs/swiper.min.css">
      <link rel="stylesheet" href="css/libs/animate.min.css">
-<!--      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+     <script src="js/wow.min.js"></script>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <script src="js/libs/wow.min.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -32,12 +33,18 @@
 
 <body>
   <header class="container-fluid pade-header">
-      <div class="row text-white p-3 pl-4 bg-deep-gray">
+     <div class="row text-white p-3 pl-4 bg-deep-gray">
         <div>
-          <div class="phone-number font-weight-bold pl-1 pb-2"><i class="fa fa-phone pr-2 "></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></div>
+          <div class="email font-weight-bold pl-1 pb-2"><i class="fa fa-envelope pr-2"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></div>
           <div class="font-weight-bold" style="font-size:18px; line-height:1">Студия красоты <br>Юлии Москалевой</div>
-        </div>
-        <div class="email font-weight-bold pl-5"><i class="fa fa-envelope pr-2"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></div>
+      </div>
+<div class="pl-5 font-weight-bold">
+        <div class="phone-number pb-1"><i class="fa fa-phone pr-2 "></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></div>
+<div class="location"><i class="fas fa-map-marker-alt pr-2"></i> г. Гомель, Беларусь</div>
+</div>
+<div class="time font-weight-bold" style="margin-left:auto;"><i class="fa fa-clock-o pr-2 "></i>Время работы:<br>
+ПН - ПТ: 9.00 - 20.00 <br>
+СБ - ВС: 13.00 - 17.00</div>
       </div>
       <div class="row  p-4 bg-black">
         <div class="logo">
@@ -74,7 +81,7 @@
     </div>
   </header>
 
-  <div class="container-fluid prices pt-5 pb-5">
+   <div class="container-fluid prices pt-5 pb-5">
       <div class="container">
         <div class="row wow fadeIn" data-wow-delay="0.5s">
           <div class="col-md-6">
@@ -99,10 +106,10 @@
                 <td class="p-3"><i class="fa fa-clock-o"></i>1.5 часа</td>
                 <td class="p-3 font-weight-bold">$50.00</td>
               </tr></table>
+            <button class="btn mt-5 text-white btn-round bg-pink"><a href="price.html" class="text-white">УВИДЕТЬ БОЛЬШЕ</a></button>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
    <div class="container-fluid">
@@ -126,9 +133,9 @@
         <div class="col-md-5 page-contacts">
           <h3 class="font-weight-bold">Наши контакты</h3>
           <span>Контактный телефон</span><br>
-          <p class="font-weight-bold mobile-block"><i class="fa fa-phone pr-3"></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></p><br>
+          <p class="font-weight-bold mobile-block"><i class="fa fa-phone pr-2"></i><a href="tel:+375 (29) 650 - 14 - 35" class="text-white">+375 (29) 650 - 14 - 35</a></p><br>
           <span>Электронная почта</span><br>
-          <p class="font-weight-bold email-block"><i class="fa fa-envelope pr-3"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></p></div>
+          <p class="font-weight-bold email-block"><i class="fa fa-envelope pr-2"></i><a href="mailto:yulashik@gmail.com" class="text-white">yulashik@gmail.com</a></p></div>
         <div class="col-md-6 text-center">
           <h3 class="font-weight-bold pb-4">Подпишитесь на нас!</h3>
           <div class="social-list">
@@ -154,33 +161,6 @@
               <script>
               new WOW().init();
               </script>
-    <script>var mapFrame = document.getElementById('map');
-if (mapFrame) {
-    ymaps.ready(initMap)
-};
-
-function initMap() {
-    var myMap;
-    myMap = new ymaps.Map("map", {
-        center: [52.42613072, 31.00391352]
-        , zoom: 16
-        , controls: []
-    });
-    myMap.behaviors.disable('scrollZoom');
-    myMap.controls.add("zoomControl", {
-        position: {
-            top: 15
-            , left: 15
-        }
-    });
-    var myPlacemark = new ymaps.Placemark([59.938816, 30.323244], {}, {
-        iconLayout: 'default#image'
-        , iconImageHref: ('img/ser-4.png')
-        , iconImageSize: [35, 35]
-        , iconImageOffset: [-20, -47]
-    });
-    myMap.geoObjects.add(myPlacemark);
-};</script>
 
 
 

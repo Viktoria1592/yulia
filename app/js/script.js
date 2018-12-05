@@ -1,46 +1,3 @@
-window.onload = function() {
-    new Swiper(".swiper-container",{
-        slidesPerView: 2,
-		spaceBetween: 30,
-        speed: 400,
-        longSwipesMs: 200,
-        loop: true,
-        autoplay: {
-        delay: 5000,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-			clickable: true,
-        },
-        navigation: {
-            nextEl: ".button-next",
-            prevEl: ".button-prev"
-        },
-        breakpoints: {
-			767: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-			559: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-		}
-    })
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
@@ -70,15 +27,5 @@ $(document).ready(function(){
 	}, function(){
 		$(this).removeClass('transition');
 	});
-});
-
-
-
-
-$(function () {
-  $('#carouselExampleIndicators').carousel({
-    interval: 5000,
-    pause: 'false',
-  });
 });
 
